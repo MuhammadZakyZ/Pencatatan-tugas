@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { getDueDateStatus } from '../lib/taskUtils'
 
 const priorityLabels = {
   low: 'Rendah',
@@ -16,6 +17,7 @@ function formatDueDate(value) {
 
 function TaskCard({ task, onToggle, onDelete }) {
   const isDone = task.status === 'done'
+  const dueDateStatus = getDueDateStatus(task)
 
   return (
     <li className={`task-card${isDone ? ' task-card-done' : ''}`}>
@@ -33,7 +35,16 @@ function TaskCard({ task, onToggle, onDelete }) {
           Prioritas {priorityLabels[task.priority]}
         </span>
         {task.category && <span>{task.category}</span>}
-        {task.due_date && <span>Tenggat {formatDueDate(task.due_date)}</span>}
+        {task.due_date && (
+          <span>
+            Tenggat {formatDueDate(task.due_date)}
+          </span>
+        )}
+        {dueDateStatus && (
+          <span className={`due-status-badge due-status-${dueDateStatus}`}>
+            {dueDateStatus === 'overdue' ? 'Terlambat' : 'Hari ini'}
+          </span>
+        )}
         <span>{isDone ? 'Selesai' : 'Belum selesai'}</span>
       </div>
       {task.description && <p className="task-description">{task.description}</p>}

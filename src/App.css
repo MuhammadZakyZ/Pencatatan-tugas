@@ -290,6 +290,77 @@
   color: #5e7478;
 }
 
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.summary-card {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid #e2ebec;
+  border-radius: 12px;
+  background: #f8fbfb;
+  color: #5e7478;
+  font-size: 13px;
+}
+
+.summary-card strong {
+  color: #17383d;
+  font-size: 26px;
+  line-height: 1;
+}
+
+.summary-card-overdue strong {
+  color: #9f342c;
+}
+
+.task-controls {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.filter-field {
+  display: grid;
+  min-width: 0;
+  gap: 7px;
+  color: #29484c;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.filter-field input,
+.filter-field select {
+  width: 100%;
+  min-width: 0;
+  min-height: 42px;
+  padding: 8px 10px;
+  border: 1px solid #cbd9db;
+  border-radius: 8px;
+  background: #fff;
+  color: #18373c;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.filter-field input:focus-visible,
+.filter-field select:focus-visible {
+  border-color: #087e8b;
+  outline: 3px solid rgb(8 126 139 / 18%);
+  outline-offset: 1px;
+}
+
+.task-result-count {
+  margin: 0 0 12px;
+  color: #5e7478;
+  font-size: 13px;
+}
+
 .empty-state {
   display: grid;
   justify-items: center;
@@ -386,6 +457,23 @@
 }
 
 .priority-high {
+  background: #fff0ee;
+  color: #9f342c;
+}
+
+.due-status-badge {
+  display: inline-flex;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.due-status-today {
+  background: #fff5d8;
+  color: #77570b;
+}
+
+.due-status-overdue {
   background: #fff0ee;
   color: #9f342c;
 }
@@ -530,6 +618,14 @@
     flex-direction: column;
   }
 
+  .summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .task-controls {
+    grid-template-columns: 1fr;
+  }
+
   .task-card-details,
   .task-description {
     margin-left: 0;
@@ -548,5 +644,17 @@
   .task-form-actions {
     align-items: stretch;
     flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 900px) {
+  .task-controls {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 521px) and (max-width: 720px) {
+  .summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
