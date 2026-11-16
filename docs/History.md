@@ -6,8 +6,8 @@
 
 ## Status Saat Ini
 - **Fase aktif:** Fase 1 — Database & Koneksi Supabase
-- **Tugas berikutnya:** 1.1
-- **Terakhir di-push:** `886c803`
+- **Tugas berikutnya:** 1.2
+- **Terakhir di-push:** `1b0c3bd`
 - **URL produksi (Vercel):** belum ada
 - **Hambatan terbuka:** tidak ada
 
@@ -54,6 +54,20 @@
 ---
 
 ## Log Sesi
+
+### Sesi 2 — 2026-11-16
+**Fase/Tugas:** Fase 1, tugas 1.1
+**Dikerjakan:**
+- Menambahkan skema tabel `tasks`, constraint, indeks, trigger `updated_at`, dan kebijakan RLS per pengguna sesuai Spec.
+- Menjalankan lint dan build; keduanya berhasil.
+**File diubah/dibuat:**
+- `supabase/schema.sql`
+- `docs/Plan.md`
+**Commit:** `1b0c3bd` feat: add tasks database schema (push: berhasil)
+**Cara menguji:** `npm run lint`; `npm run build`.
+**Keputusan/Asumsi baru:** Tidak ada.
+**Masalah tersisa:** Skema belum dijalankan di Supabase.
+**Langkah berikutnya:** Fase 1, tugas 1.2 — jalankan `supabase/schema.sql` di Supabase SQL Editor.
 
 ### Sesi 1 — 2026-11-16
 **Fase/Tugas:** Fase 0, tugas 0.1–0.11
