@@ -5,11 +5,11 @@
 > menghapus entri lama. Tulis ringkas dan faktual.
 
 ## Status Saat Ini
-- **Fase aktif:** Fase 5 — Poles & Kualitas
-- **Tugas berikutnya:** 5.1
-- **Terakhir di-push:** `dd46c1c`
+- **Fase aktif:** Fase 6 — Deploy ke Vercel
+- **Tugas berikutnya:** 6.1
+- **Terakhir di-push:** `b150ed3`
 - **URL produksi (Vercel):** belum ada
-- **Hambatan terbuka:** tidak ada
+- **Hambatan terbuka:** repositori perlu diimpor ke Vercel oleh pengguna
 
 ## Keputusan Penting (permanen)
 | Tanggal | Keputusan | Alasan |
@@ -54,6 +54,23 @@
 ---
 
 ## Log Sesi
+
+### Sesi 8 — 2026-11-16
+**Fase/Tugas:** Fase 5, tugas 5.1–5.6
+**Dikerjakan:**
+- Menyesuaikan fokus keyboard untuk semua kontrol dan memperbaiki penanganan email panjang pada header.
+- Menguji halaman masuk dan daftar pada lebar 360px, 768px, dan 1280px; tidak ditemukan overflow horizontal.
+- Menguji rute tidak dikenal dan memastikan halaman 404 tampil.
+- Memeriksa `src` untuk `console.log`/`console.debug`/`console.info`; tidak ditemukan.
+- Menambahkan deskripsi metadata dan README berisi langkah lokal, environment variable, perintah, serta panduan Vercel.
+- Lint, build, dan tes helper berhasil; `.env` tetap diabaikan Git.
+**File diubah/dibuat:**
+- `index.html`, `src/App.css`, `src/index.css`, `README.md`, `docs/Plan.md`
+**Commit:** `14c2663` style: improve accessibility and page metadata; `b150ed3` docs: add project setup and deployment guide (push: berhasil)
+**Cara menguji:** `npm run lint`; `npm run build`; `node --test src/lib/taskUtils.test.js`; buka `/login`, `/daftar`, dan rute acak pada ukuran viewport yang ditentukan.
+**Keputusan/Asumsi baru:** Tidak ada.
+**Masalah tersisa:** Deploy produksi memerlukan pengguna mengimpor repo ke Vercel dan mengisi environment variable serta konfigurasi Supabase.
+**Langkah berikutnya:** Fase 6, tugas 6.1 — impor repo GitHub ke Vercel.
 
 ### Sesi 7 — 2026-11-16
 **Fase/Tugas:** Fase 3 tugas 3.8 dan Fase 4 tugas 4.1–4.5

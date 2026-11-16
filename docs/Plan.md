@@ -4,8 +4,8 @@
 > bila tugas benar-benar selesai (lolos Definition of Done di `Agent.md`).
 > Satu tugas = satu commit (atau lebih), lalu push.
 
-**Fase aktif:** Fase 5
-**Tugas berikutnya:** 5.1
+**Fase aktif:** Fase 6
+**Tugas berikutnya:** 6.1
 
 ---
 
@@ -82,12 +82,12 @@
 ---
 
 ## Fase 5 — Poles & Kualitas
-- [ ] 5.1 Responsif di 360px, 768px, 1280px
-- [ ] 5.2 Aksesibilitas dasar (label, fokus, aria-label)
-- [ ] 5.3 Halaman 404
-- [ ] 5.4 Rapikan teks, pesan error, dan gaya visual
-- [ ] 5.5 Bersihkan kode: hapus `console.log`, kode mati, impor tak terpakai
-- [ ] 5.6 Tulis `README.md` (deskripsi, cara menjalankan, daftar env, tautan demo)
+- [x] 5.1 Responsif di 360px, 768px, 1280px
+- [x] 5.2 Aksesibilitas dasar (label, fokus, aria-label)
+- [x] 5.3 Halaman 404
+- [x] 5.4 Rapikan teks, pesan error, dan gaya visual
+- [x] 5.5 Bersihkan kode: hapus `console.log`, kode mati, impor tak terpakai
+- [x] 5.6 Tulis `README.md` (deskripsi, cara menjalankan, daftar env, tautan demo)
 
 ---
 
