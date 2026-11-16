@@ -5,11 +5,11 @@
 > menghapus entri lama. Tulis ringkas dan faktual.
 
 ## Status Saat Ini
-- **Fase aktif:** Fase 2 — Autentikasi
-- **Tugas berikutnya:** 2.5
-- **Terakhir di-push:** `30837a2`
+- **Fase aktif:** Fase 3 — CRUD Tugas
+- **Tugas berikutnya:** 3.8
+- **Terakhir di-push:** `8b385c0`
 - **URL produksi (Vercel):** belum ada
-- **Hambatan terbuka:** uji end-to-end masuk, refresh sesi, dan keluar dengan akun nyata belum dilakukan
+- **Hambatan terbuka:** uji CRUD end-to-end di akun Supabase perlu dilakukan pengguna
 
 ## Keputusan Penting (permanen)
 | Tanggal | Keputusan | Alasan |
@@ -54,6 +54,24 @@
 ---
 
 ## Log Sesi
+
+### Sesi 5 — 2026-11-16
+**Fase/Tugas:** Fase 3, tugas 3.1–3.7
+**Dikerjakan:**
+- Membuat layanan dan hook tugas dengan loading/error serta pesan aman.
+- Menambahkan daftar tugas, form tambah/ubah, konfirmasi hapus, dan checkbox selesai dengan `completed_at`.
+- Melengkapi dashboard terlindungi dan route form tugas.
+- Menjalankan lint/build dan smoke test route terlindungi; tidak membuat atau mengubah data akun nyata saat pengujian.
+**File diubah/dibuat:**
+- `src/services/tasksService.js`, `src/hooks/useTasks.js`
+- `src/components/TaskCard.jsx`, `src/components/TaskForm.jsx`
+- `src/pages/DashboardPage.jsx`, `src/pages/TaskFormPage.jsx`
+- `src/App.jsx`, `src/App.css`, `docs/Plan.md`
+**Commit:** `8b385c0` feat: add task CRUD flow (push: berhasil)
+**Cara menguji:** `npm run lint`; `npm run build`; masuk ke aplikasi lalu uji CRUD dengan akun sendiri.
+**Keputusan/Asumsi baru:** Tidak ada.
+**Masalah tersisa:** Perlu menguji simpan, ubah, tandai selesai, refresh, dan hapus pada akun Supabase.
+**Langkah berikutnya:** Fase 3, tugas 3.8 — uji CRUD end-to-end dengan akun Supabase.
 
 ### Sesi 4 — 2026-11-16
 **Fase/Tugas:** Fase 2, tugas 2.1–2.5 (implementasi; verifikasi E2E tertunda)
