@@ -4,8 +4,8 @@
 > bila tugas benar-benar selesai (lolos Definition of Done di `Agent.md`).
 > Satu tugas = satu commit (atau lebih), lalu push.
 
-**Fase aktif:** Fase 3
-**Tugas berikutnya:** 3.8
+**Fase aktif:** Fase 5
+**Tugas berikutnya:** 5.1
 
 ---
 
@@ -64,18 +64,18 @@
 - [x] 3.5 Form ubah tugas memakai form yang sama (F4)
 - [x] 3.6 Hapus dengan dialog konfirmasi (F4)
 - [x] 3.7 Checkbox selesai/belum + `completed_at` (F5)
-- [ ] 3.8 (Pengguna) Uji tambah, lihat, ubah, hapus, dan tandai selesai dengan akun Supabase
+- [x] 3.8 (Pengguna) Uji tambah, lihat, ubah, hapus, dan tandai selesai dengan akun Supabase (dinyatakan berhasil oleh pengguna)
 
 **Selesai bila:** F2, F3, F4, F5 terpenuhi dan data tersimpan di Supabase; tugas 3.8 lolos.
 
 ---
 
 ## Fase 4 — Fitur Pelengkap
-- [ ] 4.1 Penanda "Terlambat" dan "Hari ini"
-- [ ] 4.2 Pencarian judul (F6)
-- [ ] 4.3 Filter status, prioritas, kategori (F6)
-- [ ] 4.4 Pengurutan (F6)
-- [ ] 4.5 Dashboard ringkasan (F7)
+- [x] 4.1 Penanda "Terlambat" dan "Hari ini"
+- [x] 4.2 Pencarian judul (F6)
+- [x] 4.3 Filter status, prioritas, kategori (F6)
+- [x] 4.4 Pengurutan (F6)
+- [x] 4.5 Dashboard ringkasan (F7)
 
 **Selesai bila:** F6 dan F7 terpenuhi.
 

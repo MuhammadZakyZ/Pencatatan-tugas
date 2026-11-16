@@ -5,11 +5,11 @@
 > menghapus entri lama. Tulis ringkas dan faktual.
 
 ## Status Saat Ini
-- **Fase aktif:** Fase 3 — CRUD Tugas
-- **Tugas berikutnya:** 3.8
-- **Terakhir di-push:** `3abbce8`
+- **Fase aktif:** Fase 5 — Poles & Kualitas
+- **Tugas berikutnya:** 5.1
+- **Terakhir di-push:** `dd46c1c`
 - **URL produksi (Vercel):** belum ada
-- **Hambatan terbuka:** uji CRUD end-to-end di akun Supabase perlu dilakukan pengguna
+- **Hambatan terbuka:** tidak ada
 
 ## Keputusan Penting (permanen)
 | Tanggal | Keputusan | Alasan |
@@ -54,6 +54,23 @@
 ---
 
 ## Log Sesi
+
+### Sesi 7 — 2026-11-16
+**Fase/Tugas:** Fase 3 tugas 3.8 dan Fase 4 tugas 4.1–4.5
+**Dikerjakan:**
+- Menandai tugas 3.8 berhasil berdasarkan konfirmasi pengguna.
+- Menambahkan penanda tenggat "Terlambat" dan "Hari ini", pencarian judul, filter gabungan, dan pilihan pengurutan.
+- Menambahkan kartu ringkasan total, belum selesai, selesai, dan terlambat.
+- Menambahkan empat tes helper untuk penanda tenggat, kombinasi filter, pengurutan, dan ringkasan.
+- Lint, build, dan tes Node berhasil.
+**File diubah/dibuat:**
+- `src/pages/DashboardPage.jsx`, `src/components/TaskCard.jsx`, `src/App.css`
+- `src/lib/taskUtils.js`, `src/lib/taskUtils.test.js`, `docs/Plan.md`
+**Commit:** `dd46c1c` feat: add task search and dashboard insights (push: berhasil)
+**Cara menguji:** `npm run lint`; `npm run build`; `node --test src/lib/taskUtils.test.js`.
+**Keputusan/Asumsi baru:** Urutan prioritas adalah tinggi, sedang, rendah; ringkasan selalu menghitung seluruh tugas meski daftar sedang difilter.
+**Masalah tersisa:** Tidak ada yang diketahui.
+**Langkah berikutnya:** Fase 5, tugas 5.1 — uji responsif pada lebar 360px, 768px, dan 1280px.
 
 ### Sesi 6 — 2026-11-16
 **Fase/Tugas:** Fase 3, tugas 3.8 (menunggu uji manual pengguna)
