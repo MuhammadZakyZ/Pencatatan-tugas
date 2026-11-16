@@ -5,6 +5,7 @@ import PublicOnlyRoute from './components/PublicOnlyRoute'
 import DashboardPage from './pages/DashboardPage'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
+import TaskFormPage from './pages/TaskFormPage'
 import './App.css'
 
 function NotFoundPage() {
@@ -48,6 +49,22 @@ function App() {
               <PublicOnlyRoute>
                 <RegisterPage />
               </PublicOnlyRoute>
+            }
+          />
+          <Route
+            path="/tugas/baru"
+            element={
+              <ProtectedRoute>
+                <TaskFormPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/tugas/:id/ubah"
+            element={
+              <ProtectedRoute>
+                <TaskFormPage />
+              </ProtectedRoute>
             }
           />
           <Route path="*" element={<NotFoundPage />} />

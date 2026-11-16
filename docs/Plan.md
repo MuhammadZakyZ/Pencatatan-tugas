@@ -4,8 +4,8 @@
 > bila tugas benar-benar selesai (lolos Definition of Done di `Agent.md`).
 > Satu tugas = satu commit (atau lebih), lalu push.
 
-**Fase aktif:** Fase 2
-**Tugas berikutnya:** 2.5
+**Fase aktif:** Fase 3
+**Tugas berikutnya:** 3.8
 
 ---
 
@@ -50,22 +50,23 @@
 - [x] 2.2 Halaman Daftar `/daftar` + validasi (F1)
 - [x] 2.3 Halaman Masuk `/login` + pesan error umum
 - [x] 2.4 Komponen `ProtectedRoute` dan pengalihan sesuai aturan alur
-- [ ] 2.5 Header dengan tombol Logout; sesi bertahan saat refresh
+- [x] 2.5 Header dengan tombol Logout; sesi bertahan saat refresh
 
 **Selesai bila:** kriteria penerimaan F1 terpenuhi.
 
 ---
 
 ## Fase 3 — CRUD Tugas
-- [ ] 3.1 `services/tasksService.js` (getTasks, createTask, updateTask, deleteTask)
-- [ ] 3.2 Hook `useTasks` (state, loading, error)
-- [ ] 3.3 Halaman daftar tugas + keadaan loading/error/kosong (F3)
-- [ ] 3.4 Form tambah tugas + validasi (F2)
-- [ ] 3.5 Form ubah tugas memakai form yang sama (F4)
-- [ ] 3.6 Hapus dengan dialog konfirmasi (F4)
-- [ ] 3.7 Checkbox selesai/belum + `completed_at` (F5)
+- [x] 3.1 `services/tasksService.js` (getTasks, createTask, updateTask, deleteTask)
+- [x] 3.2 Hook `useTasks` (state, loading, error)
+- [x] 3.3 Halaman daftar tugas + keadaan loading/error/kosong (F3)
+- [x] 3.4 Form tambah tugas + validasi (F2)
+- [x] 3.5 Form ubah tugas memakai form yang sama (F4)
+- [x] 3.6 Hapus dengan dialog konfirmasi (F4)
+- [x] 3.7 Checkbox selesai/belum + `completed_at` (F5)
+- [ ] 3.8 (Pengguna) Uji tambah, lihat, ubah, hapus, dan tandai selesai dengan akun Supabase
 
-**Selesai bila:** F2, F3, F4, F5 terpenuhi dan data tersimpan di Supabase.
+**Selesai bila:** F2, F3, F4, F5 terpenuhi dan data tersimpan di Supabase; tugas 3.8 lolos.
 
 ---
 
