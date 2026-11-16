@@ -6,10 +6,10 @@
 
 ## Status Saat Ini
 - **Fase aktif:** Fase 2 — Autentikasi
-- **Tugas berikutnya:** 2.1
-- **Terakhir di-push:** `6cf30c4`
+- **Tugas berikutnya:** 2.5
+- **Terakhir di-push:** `30837a2`
 - **URL produksi (Vercel):** belum ada
-- **Hambatan terbuka:** tidak ada
+- **Hambatan terbuka:** uji end-to-end masuk, refresh sesi, dan keluar dengan akun nyata belum dilakukan
 
 ## Keputusan Penting (permanen)
 | Tanggal | Keputusan | Alasan |
@@ -54,6 +54,23 @@
 ---
 
 ## Log Sesi
+
+### Sesi 4 — 2026-11-16
+**Fase/Tugas:** Fase 2, tugas 2.1–2.5 (implementasi; verifikasi E2E tertunda)
+**Dikerjakan:**
+- Membuat layanan autentikasi dan hook `useAuth` untuk sesi, daftar, masuk, dan keluar.
+- Membuat halaman masuk/daftar, validasi pendaftaran, route terlindungi, dan pengalihan untuk pengguna yang sudah masuk.
+- Membuat halaman awal terlindungi dan header dengan tombol keluar.
+- Menjalankan lint/build dan smoke test browser untuk redirect tamu, formulir daftar, ketidakcocokan kata sandi, dan lebar 360px.
+**File diubah/dibuat:**
+- `src/App.jsx`, `src/App.css`, `src/index.css`
+- `src/services/authService.js`, `src/hooks/`, `src/components/`, `src/pages/`
+- `docs/Plan.md`
+**Commit:** `30837a2` feat: add Supabase authentication flow (push: berhasil)
+**Cara menguji:** `npm run lint`; `npm run build`; buka `/` sebagai tamu untuk memastikan diarahkan ke `/login`.
+**Keputusan/Asumsi baru:** Tidak ada.
+**Masalah tersisa:** Perlu menguji daftar, masuk, refresh sesi, dan keluar menggunakan akun nyata sebelum F1 dinyatakan terverifikasi.
+**Langkah berikutnya:** Fase 2, tugas 2.5 — verifikasi header keluar dan sesi setelah refresh.
 
 ### Sesi 3 — 2026-11-16
 **Fase/Tugas:** Fase 1, tugas 1.2–1.5
