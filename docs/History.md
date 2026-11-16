@@ -7,7 +7,7 @@
 ## Status Saat Ini
 - **Fase aktif:** Fase 3 — CRUD Tugas
 - **Tugas berikutnya:** 3.8
-- **Terakhir di-push:** `8b385c0`
+- **Terakhir di-push:** `3abbce8`
 - **URL produksi (Vercel):** belum ada
 - **Hambatan terbuka:** uji CRUD end-to-end di akun Supabase perlu dilakukan pengguna
 
@@ -54,6 +54,19 @@
 ---
 
 ## Log Sesi
+
+### Sesi 6 — 2026-11-16
+**Fase/Tugas:** Fase 3, tugas 3.8 (menunggu uji manual pengguna)
+**Dikerjakan:**
+- Memulai kembali server Vite lokal setelah menemukan server sebelumnya tidak aktif.
+- Memastikan rute `/login` merespons HTTP 200 dan menyiapkan halaman masuk di browser.
+- Tidak memasukkan kredensial atau melakukan perubahan data Supabase.
+**File diubah/dibuat:** `docs/History.md`
+**Commit:** belum dibuat
+**Cara menguji:** Masuk sendiri di `http://127.0.0.1:5173/login`, lalu uji CRUD dengan akun Supabase.
+**Keputusan/Asumsi baru:** Tidak ada.
+**Masalah tersisa:** Uji tambah, lihat, ubah, tandai selesai, refresh, dan hapus menunggu pengguna masuk dan mengonfirmasi hasilnya.
+**Langkah berikutnya:** Selesaikan uji manual tugas 3.8.
 
 ### Sesi 5 — 2026-11-16
 **Fase/Tugas:** Fase 3, tugas 3.1–3.7
