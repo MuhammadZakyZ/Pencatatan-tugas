@@ -5,7 +5,7 @@
 > Satu tugas = satu commit (atau lebih), lalu push.
 
 **Fase aktif:** Fase 2
-**Tugas berikutnya:** 2.1
+**Tugas berikutnya:** 2.5
 
 ---
 
@@ -46,10 +46,10 @@
 ---
 
 ## Fase 2 — Autentikasi
-- [ ] 2.1 Hook `useAuth` (sesi, pengguna, `signUp`, `signIn`, `signOut`)
-- [ ] 2.2 Halaman Daftar `/daftar` + validasi (F1)
-- [ ] 2.3 Halaman Masuk `/login` + pesan error umum
-- [ ] 2.4 Komponen `ProtectedRoute` dan pengalihan sesuai aturan alur
+- [x] 2.1 Hook `useAuth` (sesi, pengguna, `signUp`, `signIn`, `signOut`)
+- [x] 2.2 Halaman Daftar `/daftar` + validasi (F1)
+- [x] 2.3 Halaman Masuk `/login` + pesan error umum
+- [x] 2.4 Komponen `ProtectedRoute` dan pengalihan sesuai aturan alur
 - [ ] 2.5 Header dengan tombol Logout; sesi bertahan saat refresh
 
 **Selesai bila:** kriteria penerimaan F1 terpenuhi.
