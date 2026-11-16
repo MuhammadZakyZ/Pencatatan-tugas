@@ -85,7 +85,7 @@
 }
 
 .form-field input::placeholder {
-  color: #87999c;
+  color: #667c80;
 }
 
 .form-field input:focus-visible {
@@ -193,6 +193,11 @@
   gap: 18px;
   color: #526b70;
   font-size: 14px;
+}
+
+.app-header-user span {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .logout-button {
