@@ -5,9 +5,9 @@
 > menghapus entri lama. Tulis ringkas dan faktual.
 
 ## Status Saat Ini
-- **Fase aktif:** Fase 1 — Database & Koneksi Supabase
-- **Tugas berikutnya:** 1.2
-- **Terakhir di-push:** `1b0c3bd`
+- **Fase aktif:** Fase 2 — Autentikasi
+- **Tugas berikutnya:** 2.1
+- **Terakhir di-push:** `6cf30c4`
 - **URL produksi (Vercel):** belum ada
 - **Hambatan terbuka:** tidak ada
 
@@ -54,6 +54,24 @@
 ---
 
 ## Log Sesi
+
+### Sesi 3 — 2026-11-16
+**Fase/Tugas:** Fase 1, tugas 1.2–1.5
+**Dikerjakan:**
+- Memastikan tabel `public.tasks` dapat diakses melalui Supabase REST API.
+- Membuat klien Supabase yang membaca `VITE_SUPABASE_URL` dan `VITE_SUPABASE_ANON_KEY`.
+- Memindahkan `.env` lokal ke root agar dibaca Vite; file tetap diabaikan Git.
+- Menguji query tanpa mengambil baris data melalui klien yang dimuat Vite; berhasil.
+- Menjalankan lint dan build; keduanya berhasil.
+**File diubah/dibuat:**
+- `src/lib/supabaseClient.js`
+- `docs/Plan.md`
+- `.env` lokal dipindahkan dari `supabase/.env` ke root (tidak di-commit).
+**Commit:** `6cf30c4` feat: connect Supabase client (push: berhasil)
+**Cara menguji:** Query `select('id').limit(0)` berhasil melalui klien Supabase.
+**Keputusan/Asumsi baru:** Tidak ada.
+**Masalah tersisa:** Tidak ada.
+**Langkah berikutnya:** Fase 2, tugas 2.1 — buat hook `useAuth`.
 
 ### Sesi 2 — 2026-11-16
 **Fase/Tugas:** Fase 1, tugas 1.1
