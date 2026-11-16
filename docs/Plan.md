@@ -5,7 +5,7 @@
 > Satu tugas = satu commit (atau lebih), lalu push.
 
 **Fase aktif:** Fase 1
-**Tugas berikutnya:** 1.1
+**Tugas berikutnya:** 1.2
 
 ---
 
@@ -35,7 +35,7 @@
 ---
 
 ## Fase 1 — Database & Koneksi Supabase
-- [ ] 1.1 Simpan skema dari `Spec.md` bagian 4 ke `supabase/schema.sql`
+- [x] 1.1 Simpan skema dari `Spec.md` bagian 4 ke `supabase/schema.sql`
 - [ ] 1.2 (Pengguna) Jalankan isi `schema.sql` di Supabase → SQL Editor
 - [ ] 1.3 Buat `src/lib/supabaseClient.js` membaca env `VITE_*`
 - [ ] 1.4 Buat `.env` lokal (pengguna mengisi nilainya; JANGAN di-commit)
